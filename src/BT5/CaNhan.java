@@ -13,5 +13,37 @@ public abstract class CaNhan {
         this.sdt = sdt;
     }
 
+    public String getHoTen() {
+        return hoTen;
+    }
+
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
+    }
+
+    public int getTuoi() {
+        return tuoi;
+    }
+
+    public void setTuoi(int tuoi) {
+        this.tuoi = tuoi;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public String getSdt() {
+        return sdt;
+    }
+
+    public void setSdt(String sdt) {
+        this.sdt = sdt;
+    }
+
     public abstract String HienThiTT();
 }
