@@ -1,8 +1,8 @@
 package BT5;
 
 public class HocSinh extends CaNhan {
-    String lop;
-    String nangKhieu;
+    private String lop;
+    private String nangKhieu;
 
     public HocSinh(String hoTen, int tuoi, String diaChi, String sdt, String lop, String nangKhieu) {
         super(hoTen, tuoi, diaChi, sdt);
@@ -28,6 +28,6 @@ public class HocSinh extends CaNhan {
 
     @Override
     public String HienThiTT() {
-        return "Họ tên: " + hoTen + ", Tuổi: " + tuoi + ", Địa chỉ: " + diaChi + ", SĐT: " + sdt + ", Lớp: " + lop + ", Năng khiếu: " + nangKhieu;
+        return "Họ tên: " + getHoTen() + ", Tuổi: " + getTuoi() + ", Địa chỉ: " + getDiaChi() + ", SĐT: " + getSdt() + ", Lớp: " + lop + ", Năng khiếu: " + nangKhieu;
     }
 }

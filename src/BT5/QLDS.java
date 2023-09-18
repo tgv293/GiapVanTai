@@ -14,7 +14,7 @@ public class QLDS implements IQLDS {
     @Override
     public int xoa(String ten) {
         for (CaNhan p : dsCaNhan) {
-            if (p.hoTen.equals(ten)) {
+            if (p.getHoTen().equals(ten)) {
                 dsCaNhan.remove(p);
                 return 1;
             }

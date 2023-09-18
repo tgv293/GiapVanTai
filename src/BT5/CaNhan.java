@@ -1,10 +1,10 @@
 package BT5;
 
 public abstract class CaNhan {
-     String hoTen;
-     int tuoi;
-     String diaChi;
-     String sdt;
+     private String hoTen;
+     private int tuoi;
+     private String diaChi;
+     private String sdt;
 
     public CaNhan(String hoTen, int tuoi, String diaChi, String sdt) {
         this.hoTen = hoTen;
