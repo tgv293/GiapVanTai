@@ -32,7 +32,7 @@ public class MainBT5 {
         qlds.inDS();
 //      Xóa học sinh
         qlds.xoa("Nguyen Van A");
-        System.out.println("Danh sach hoc sinh sau khi xoa:");
+        System.out.println("Danh sách học sinh sau khi xóa:");
         qlds.inDS();
 //      Chỉnh sửa dựa trên getter setter
         HocSinh hs = new HocSinh("Nguyen Van A", 20, "123 Le Loi", "0123456789", "10A1", "Hoc gioi");

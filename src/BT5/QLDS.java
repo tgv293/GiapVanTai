@@ -1,34 +1,25 @@
 package BT5;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class QLDS implements IQLDS {
-    private List<CaNhan> dsCaNhan;
-
-    public QLDS() {
-        dsCaNhan = new ArrayList<>();
-    }
+    ArrayList<CaNhan> dsCaNhan = new ArrayList<>();
 
     @Override
     public int them(CaNhan p) {
         dsCaNhan.add(p);
-        return dsCaNhan.size();
+        return 1;
     }
 
     @Override
     public int xoa(String ten) {
-        int count = 0;
-        Iterator<CaNhan> iterator = dsCaNhan.iterator();
-        while (iterator.hasNext()) {
-            CaNhan p = iterator.next();
+        for (CaNhan p : dsCaNhan) {
             if (p.hoTen.equals(ten)) {
-                iterator.remove();
-                count++;
+                dsCaNhan.remove(p);
+                return 1;
             }
         }
-        return count;
+        return 0;
     }
 
     @Override

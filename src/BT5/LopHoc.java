@@ -4,36 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LopHoc {
-    List<HocSinh> dsHocSinh;
-    List<GiaoVien> dsGiaoVienGD;
-    GiaoVien giaoVienCN;
+    QLDS qldsHS = new QLDS();
+    QLDS qldsGVGD = new QLDS();
 
-    public LopHoc() {
-        dsHocSinh = new ArrayList<>();
-        dsGiaoVienGD = new ArrayList<>();
+    int themHocSinh(HocSinh hs) {
+        qldsHS.them(hs);
+        return 1;
     }
 
-    public int themHocSinh(HocSinh hs) {
-        dsHocSinh.add(hs);
-        return dsHocSinh.size();
+    int themGVGD(GiaoVien gv) {
+        qldsGVGD.them(gv);
+        return 1;
     }
 
-    public int themGVGD(GiaoVien gv) {
-        dsGiaoVienGD.add(gv);
-        return dsGiaoVienGD.size();
+    void inDSHS() {
+        qldsHS.inDS();
     }
 
-    public int inDSHS() {
-        for (HocSinh hs : dsHocSinh) {
-            System.out.println(hs.HienThiTT());
-        }
-        return dsHocSinh.size();
-    }
-
-    public int inDSGVGD() {
-        for (GiaoVien gv : dsGiaoVienGD) {
-            System.out.println(gv.HienThiTT());
-        }
-        return dsGiaoVienGD.size();
+    void inDSGVGD() {
+        qldsGVGD.inDS();
     }
 }

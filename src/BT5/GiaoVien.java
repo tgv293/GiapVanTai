@@ -10,6 +10,22 @@ public class GiaoVien extends CaNhan {
         this.toBoMon = toBoMon;
     }
 
+    public String getMonDay() {
+        return monDay;
+    }
+
+    public void setMonDay(String monDay) {
+        this.monDay = monDay;
+    }
+
+    public String getToBoMon() {
+        return toBoMon;
+    }
+
+    public void setToBoMon(String toBoMon) {
+        this.toBoMon = toBoMon;
+    }
+
     @Override
     public String HienThiTT() {
         return "Họ tên: " + hoTen + ", Tuổi: " + tuoi + ", Địa chỉ: " + diaChi + ", SĐT: " + sdt + ", Môn dạy: " + monDay + ", Tổ bộ môn: " + toBoMon;
