@@ -3,55 +3,16 @@ package factory.pizza;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
 public abstract class Pizza {
-    StringBuilder description = new StringBuilder();
-    abstract void prepare();
-    abstract void bake();
-    abstract void cut();
-    abstract void box();
+    StringBuilder builder = new StringBuilder();
+    public abstract void prepare();
+    public abstract void bake();
+    public abstract void cut();
+    public abstract void box();
 
     @Override
     public String toString() {
-        return description.toString();
+        return builder.toString();
     }
 }
-*/
-abstract public class Pizza {
-    String name;
-    String dough;
-    String sauce;
-    List<String> toppings = new ArrayList<String>();
 
-    public String getName() {
-        return name;
-    }
-
-    public void prepare() {
-        System.out.println("Preparing " + name);
-    }
-
-    public void bake() {
-        System.out.println("Baking " + name);
-    }
-
-    public void cut() {
-        System.out.println("Cutting " + name);
-    }
-
-    public void box() {
-        System.out.println("Boxing " + name);
-    }
-
-    public String toString() {
-        // code to display pizza name and ingredients
-        StringBuffer display = new StringBuffer();
-        display.append("---- " + name + " ----\n");
-        display.append(dough + "\n");
-        display.append(sauce + "\n");
-        for (String topping : toppings) {
-            display.append(topping + "\n");
-        }
-        return display.toString();
-    }
-}
