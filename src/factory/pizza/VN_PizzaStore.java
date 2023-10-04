@@ -4,7 +4,7 @@ public class VN_PizzaStore extends PizzaStore {
     @Override
     protected Pizza createPizza(PizzaType t) {
         switch (t) {
-            case Shrimp -> {
+            case Seafood -> {
                 return new VN_PizzaSeafood();
             }
         }

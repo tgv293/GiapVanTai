@@ -1,52 +1,44 @@
 package A1_BuilderPattern;
 
-import A1_BuilderPattern.CTHD;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class HoaDon {
-    private HoaDonHeader hoaDonHeader;
-    private List<CTHD> dsCTHD;
+    private HoaDonHeader header;
+    private List<CTHD> cthds;
 
     protected HoaDon(Builder builder) {
-        this.hoaDonHeader = builder.hoaDonHeader;
-        this.dsCTHD = builder.dsCTHD;
+        this.header = builder.header;
+        this.cthds = builder.cthds;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append(header.toString());
+        for (CTHD cthd : cthds) {
+            builder.append("\n").append(cthd.toString());
+        }
+        return builder.toString();
     }
 
     public static class Builder {
-        private HoaDonHeader hoaDonHeader;
-        private List<CTHD> dsCTHD;
+        private HoaDonHeader header;
+        private List<CTHD> cthds = new ArrayList<>();
 
-        public Builder setHoaDonHeader(HoaDonHeader hoaDonHeader) {
-            this.hoaDonHeader = hoaDonHeader;
+        public Builder setHeader(String maHD, String ngayBan, String tenKH) {
+            this.header = new HoaDonHeader(maHD, ngayBan, tenKH);
             return this;
         }
 
-        public Builder setDsCTHD(List<CTHD> dsCTHD) {
-            this.dsCTHD = dsCTHD;
+        public Builder addCTHD(String sanPham, int soLuong, double donGia, double chietKhau) {
+            this.cthds.add(new CTHD(sanPham, soLuong, donGia, chietKhau));
             return this;
         }
 
         public HoaDon build() {
             return new HoaDon(this);
         }
-    }
 
-    @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("Hoa Don:\n");
-        builder.append("Ma Hoa Don: ").append(hoaDonHeader.getMaHoaDon()).append("\n");
-        builder.append("Ngay Ban: ").append(hoaDonHeader.getNgayBan()).append("\n");
-        builder.append("Ten Khach Hang: ").append(hoaDonHeader.getTenKhachHang()).append("\n");
-        builder.append("Chi Tiet Hoa Don:\n");
-        for (CTHD cthd : dsCTHD) {
-            builder.append("San Pham: ").append(cthd.getSanPham()).append("\n");
-            builder.append("So Luong: ").append(cthd.getSoLuong()).append("\n");
-            builder.append("Don Gia: ").append(cthd.getDonGia()).append("\n");
-            builder.append("Chiet Khau: ").append(cthd.getChietKhau()).append("\n");
-        }
-        return builder.toString();
     }
-
 }

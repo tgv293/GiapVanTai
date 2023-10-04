@@ -7,7 +7,7 @@ public class User {
         this.name = name;
     }
 
-    public boolean vote(String candidate) {
-        return Election.getInstance().vote(name, candidate);
+    public void vote(Candidate c) {
+        Election.getInstance().vote(c, name);
     }
 }

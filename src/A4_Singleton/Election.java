@@ -1,37 +1,52 @@
 package A4_Singleton;
 
-import java.util.HashMap;
-import java.util.Map;
+import singleton.vidu.MySingleton;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Election {
     private static Election instance;
-    private Map<String, Integer> votes;
-    private Map<String, Boolean> voters;
+    private int Trump, Biden;
+    private List<String> usersVoted;
 
     private Election() {
-        votes = new HashMap<>();
-        votes.put("Donald Trump", 0);
-        votes.put("Joe Biden", 0);
-        voters = new HashMap<>();
+        Trump = 0;
+        Biden = 0;
+        usersVoted = new ArrayList<>();
     }
 
-    public static synchronized Election getInstance() {
-        if (instance == null) {
+    public static Election getInstance() {
+        if (instance == null)
             instance = new Election();
-        }
         return instance;
     }
 
-    public boolean vote(String voter, String candidate) {
-        if (voters.getOrDefault(voter, false)) {
-            return false; // This voter has already voted
+    public void vote(Candidate c, String user) {
+        if (!usersVoted.contains(user)) {
+            if (c == Candidate.Trump) {
+                Trump++;
+            } else if (c == Candidate.Biden) {
+                Biden++;
+            }
+            usersVoted.add(user);
+        } else {
+            System.out.println(user + " đã bỏ phiếu.");
         }
-        voters.put(voter, true);
-        votes.put(candidate, votes.get(candidate) + 1);
-        return true;
     }
 
-    public int getVotes(String candidate) {
-        return votes.get(candidate);
+    public void printVoters() {
+        System.out.println("Danh sách người đã bỏ phiếu:");
+        for (String user : usersVoted) {
+            System.out.println(user);
+        }
+    }
+
+    public int getTrump() {
+        return Trump;
+    }
+
+    public int getBiden() {
+        return Biden;
     }
 }

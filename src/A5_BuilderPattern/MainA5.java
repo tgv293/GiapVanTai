@@ -16,6 +16,6 @@ public class MainA5 {
                 .setChapters(chapters)
                 .build();
 
-        book.display();
+        System.out.print(book);
     }
 }

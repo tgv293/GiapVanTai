@@ -5,11 +5,14 @@ public class MainA4 {
         User user1 = new User("User1");
         User user2 = new User("User2");
 
-        user1.vote("Donald Trump");
-        user2.vote("Joe Biden");
-        user1.vote("Joe Biden"); // This vote should not be counted
+        user1.vote(Candidate.Trump);
+        user2.vote(Candidate.Biden);
+        user2.vote(Candidate.Biden);
+        user2.vote(Candidate.Trump);
 
-        System.out.println("Votes for Donald Trump: " + Election.getInstance().getVotes("Donald Trump"));
-        System.out.println("Votes for Joe Biden: " + Election.getInstance().getVotes("Joe Biden"));
+        System.out.println("Kết quả bầu cử:");
+        System.out.println("Trump: " + Election.getInstance().getTrump());
+        System.out.println("Biden: " + Election.getInstance().getBiden());
+        Election.getInstance().printVoters();
     }
 }

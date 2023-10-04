@@ -1,31 +1,19 @@
 package A1_BuilderPattern;
 
-public class HoaDonHeader {
-    private String maHoaDon;
-    private String ngayBan;
-    private String tenKhachHang;
+class HoaDonHeader {
+    private String soHD, ngayBan, tenKH;
 
-    public String getMaHoaDon() {
-        return maHoaDon;
-    }
-
-    public void setMaHoaDon(String maHoaDon) {
-        this.maHoaDon = maHoaDon;
-    }
-
-    public String getNgayBan() {
-        return ngayBan;
-    }
-
-    public void setNgayBan(String ngayBan) {
+    public HoaDonHeader(String soHD, String ngayBan, String tenKH) {
+        this.soHD = soHD;
         this.ngayBan = ngayBan;
+        this.tenKH = tenKH;
     }
 
-    public String getTenKhachHang() {
-        return tenKhachHang;
-    }
+    @Override
+    public String toString() {
+        return "Hóa đơn: " + this.soHD + "\n" +
+                "Ngày bán: " + this.ngayBan + "\n" +
+                "Khách hàng: " + this.tenKH;
 
-    public void setTenKhachHang(String tenKhachHang) {
-        this.tenKhachHang = tenKhachHang;
     }
 }

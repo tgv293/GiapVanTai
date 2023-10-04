@@ -15,11 +15,12 @@ public class Book {
         this.chapters = builder.chapters;
     }
 
-    public void display() {
-        System.out.println("Title: " + title);
-        System.out.println("Pages: " + pages);
-        System.out.println("Author: " + author);
-        System.out.println("Chapters: " + chapters);
+    @Override
+    public String toString() {
+        return "Title: " + title + "\n" +
+                "Pages: " + pages + "\n" +
+                "Author: " + author + "\n" +
+                "Chapters: " + chapters + "\n";
     }
 
     public static class Builder {
