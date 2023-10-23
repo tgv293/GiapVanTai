@@ -1,5 +1,9 @@
 package B4_Composite;
 
+/**
+ * Lớp KeHoachChung là một phần của mô hình Composite, đại diện cho một kế hoạch học tập tổng hợp chứa các kế hoạch con.
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +27,8 @@ public class KeHoachChung extends KeHoachHocTap {
     @Override
     public int getSoTC() {
         int tong = 0;
-        for(KeHoachHocTap k:list) {
-            tong+=k.getSoTC();
+        for (KeHoachHocTap k : list) {
+            tong += k.getSoTC();
         }
         return tong;
     }
@@ -32,8 +36,8 @@ public class KeHoachChung extends KeHoachHocTap {
     @Override
     public int getHocPhi() {
         int tong = 0;
-        for(KeHoachHocTap k:list) {
-            tong+=k.getHocPhi();
+        for (KeHoachHocTap k : list) {
+            tong += k.getHocPhi();
         }
         return tong;
     }

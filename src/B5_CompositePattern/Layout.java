@@ -1,5 +1,9 @@
 package B5_CompositePattern;
 
+/**
+ * Lớp Layout là một thành phần tổng hợp kế thừa từ Component, đại diện cho layout chứa nhiều thành phần con.
+ */
+
 import java.util.*;
 
 public class Layout extends Component {

@@ -1,14 +1,21 @@
 package B2_DecoratorPattern;
 
-import java.util.*;
-
-class PunctuationRemover extends TokenizerDecorator {
-    public PunctuationRemover(Tokenizer tokenizer) {
-        super(tokenizer);
+/**
+ * Lớp PunctuationRemover là một decorator để loại bỏ dấu câu khỏi văn bản.
+ */
+public class PunctuationRemover extends TextProcessorDecorator {
+    public PunctuationRemover(TextProcessor decoratedTextProcessor) {
+        super(decoratedTextProcessor);
     }
 
-    public List<String> tokenize(String text) {
-        text = text.replaceAll("\\p{Punct}", "");
-        return tokenizer.tokenize(text);
+    /**
+     * Loại bỏ dấu câu từ văn bản.
+     *
+     * @param text Văn bản đầu vào
+     * @return Văn bản sau khi loại bỏ dấu câu
+     */
+    public String process(String text) {
+        text = super.process(text);
+        return text.replaceAll("[.,;:!?]", "");
     }
 }

@@ -1,12 +1,22 @@
 package BT4;
 
-//- Chuyến xe nội thành: Mã số chuyến, Họ tên tài xế, số xe, số tuyến, số km đi được, doanh thu.
-//- Chuyến xe ngoại thành: Mã số chuyến, Họ tên tài xế, số xe, nơi đến, số ngày đi, doanh thu.
-
+/**
+ * Lớp ChuyenXe là lớp cơ sở đại diện cho một chuyến xe trong công ty.
+ * Có hai loại chuyến xe: nội thành và ngoại thành.
+ * Mỗi chuyến xe được định nghĩa bởi mã số chuyến, họ tên tài xế, số xe, và doanh thu.
+ */
 public class ChuyenXe {
     String masoChuyen, tenTX, soXe;
     int doanhThu;
 
+    /**
+     * Constructor khởi tạo một chuyến xe.
+     *
+     * @param masoChuyen Mã số chuyến.
+     * @param tenTX      Họ tên tài xế.
+     * @param soXe       Số xe.
+     * @param doanhThu   Doanh thu của chuyến xe.
+     */
     public ChuyenXe(String masoChuyen, String tenTX, String soXe, int doanhThu) {
         this.masoChuyen = masoChuyen;
         this.tenTX = tenTX;

@@ -5,7 +5,10 @@ import BT1.NhanVien;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuanLyNhanVien implements IQuanLy{
+/**
+ * Lớp QuanLyNhanVien triển khai giao diện IQuanLy để quản lý danh sách nhân viên.
+ */
+public class QuanLyNhanVien implements IQuanLy {
 
     List<NhanVien> dsNV = new ArrayList<>();
 
@@ -16,7 +19,7 @@ public class QuanLyNhanVien implements IQuanLy{
 
     @Override
     public void inDS() {
-        for (NhanVien nv: dsNV)
+        for (NhanVien nv : dsNV)
             System.out.println(nv.getThongTin());
     }
 }

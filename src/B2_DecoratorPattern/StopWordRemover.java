@@ -1,15 +1,27 @@
 package B2_DecoratorPattern;
 
-import java.util.*;
+/**
+ * Lớp StopWordRemover là một decorator để loại bỏ từ dừng khỏi văn bản.
+ */
+public class StopWordRemover extends TextProcessorDecorator {
+    private static final String[] STOP_WORDS = {" và ", " hoặc ", " thì ", " mà ", " là "};
 
-class StopWordRemover extends TokenizerDecorator {
-    public StopWordRemover(Tokenizer tokenizer) {
-        super(tokenizer);
+    public StopWordRemover(TextProcessor decoratedTextProcessor) {
+        super(decoratedTextProcessor);
     }
 
-    public List<String> tokenize(String text) {
-        List<String> tokens = tokenizer.tokenize(text);
-        tokens.removeAll(Arrays.asList("và", "hoặc", "thì", "mà", "là"));
-        return tokens;
+    /**
+     * Loại bỏ từ dừng từ văn bản.
+     *
+     * @param text Văn bản đầu vào
+     * @return Văn bản sau khi loại bỏ từ dừng
+     */
+    public String process(String text) {
+        text = " " + super.process(text) + " ";
+        for (String stopWord : STOP_WORDS) {
+            text = text.replace(stopWord, " ");
+        }
+        text = text.replaceAll("\\s+", " ");
+        return text.trim();
     }
 }

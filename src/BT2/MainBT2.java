@@ -2,6 +2,9 @@ package BT2;
 
 import BT1.NhanVien;
 
+/**
+ * Lớp MainBT2 chứa phương thức main để thử nghiệm quản lý nhân viên.
+ */
 public class MainBT2 {
     public static void main(String[] args) {
         IQuanLy quanLyNV = new QuanLyNhanVien();

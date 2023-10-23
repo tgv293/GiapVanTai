@@ -1,5 +1,8 @@
 package CB4_ChainOfResponsibility;
 
+/**
+ * Lớp GiaiSauCung đại diện cho một giải cuối cùng trong danh sách các giải với quy tắc xác định trúng giải dựa trên nhiều bộ số trúng thưởng và là một phần của mô hình Chain of Responsibility.
+ */
 public class GiaiSauCung implements DoVeSo {
     DoVeSo giaiKeTiep;
     String tenGiai;

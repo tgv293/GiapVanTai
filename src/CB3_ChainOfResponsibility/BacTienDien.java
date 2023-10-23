@@ -1,5 +1,8 @@
 package CB3_ChainOfResponsibility;
 
+/**
+ * Lớp BacTienDien đại diện cho một bậc tính tiền điện với giới hạn và giá tiền cụ thể, và là một phần của mô hình Chain of Responsibility.
+ */
 public class BacTienDien implements ITinhTienDien {
     double gioiHan;
     double giaTien;

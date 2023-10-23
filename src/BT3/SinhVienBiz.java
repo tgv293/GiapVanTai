@@ -1,5 +1,6 @@
 package BT3;
 
+// Lớp SinhVienBiz kế thừa từ SinhVienPoly, đại diện cho sinh viên ngành Biz
 class SinhVienBiz extends SinhVienPoly {
     double diemMarketing;
     double diemSales;

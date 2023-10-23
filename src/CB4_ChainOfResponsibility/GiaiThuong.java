@@ -1,5 +1,8 @@
 package CB4_ChainOfResponsibility;
 
+/**
+ * Lớp GiaiThuong đại diện cho một giải thưởng trong danh sách các giải với quy tắc xác định trúng giải dựa trên nhiều bộ số trúng thưởng và là một phần của mô hình Chain of Responsibility.
+ */
 public class GiaiThuong implements DoVeSo {
     DoVeSo giaiKeTiep;
     String tenGiai;

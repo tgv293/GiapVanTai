@@ -1,5 +1,8 @@
 package B3_CompositePattern;
 
+/**
+ * Lớp trừu tượng AbstractFile đại diện cho cả thư mục và tệp tin trong mô hình Composite.
+ */
 abstract class AbstractFile {
     String name, ngayTao;
     String duongDan;

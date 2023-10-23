@@ -1,5 +1,8 @@
 package CB2_ChainOfResponsibility;
 
+/**
+ * Lớp ChuTichDuyetVay thực hiện việc duyệt và xử lý các khoản vay với quyền hạn của Chủ tịch và là một phần của mô hình Chain of Responsibility.
+ */
 public class ChuTichDuyetVay implements IXLKhoanVay {
     String ten;
     int hanMucVay;

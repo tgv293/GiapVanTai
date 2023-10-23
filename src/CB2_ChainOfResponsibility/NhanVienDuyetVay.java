@@ -1,5 +1,8 @@
 package CB2_ChainOfResponsibility;
 
+/**
+ * Lớp NhanVienDuyetVay đại diện cho nhân viên duyệt khoản vay và là một phần của mô hình Chain of Responsibility.
+ */
 public class NhanVienDuyetVay implements IXLKhoanVay {
 
     IXLKhoanVay capCaoHon;
@@ -11,7 +14,6 @@ public class NhanVienDuyetVay implements IXLKhoanVay {
         this.chucVu = chucVu;
         this.hanMucVay = hanMucVay;
     }
-
 
     @Override
     public IXLKhoanVay capCaoHon(IXLKhoanVay xuLyKhoanVay) {
@@ -26,5 +28,4 @@ public class NhanVienDuyetVay implements IXLKhoanVay {
         else
             return capCaoHon.xuLyVay(duAn, tienVay);
     }
-
 }

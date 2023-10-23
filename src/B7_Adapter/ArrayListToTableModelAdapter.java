@@ -3,6 +3,10 @@ package B7_Adapter;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
+/**
+ * Lớp ArrayListToTableModelAdapter là một lớp adapter dùng để chuyển đổi dữ liệu từ ArrayList sang DefaultTableModel
+ * để sử dụng trong JTable.
+ */
 public class ArrayListToTableModelAdapter {
     private DefaultTableModel model;
 

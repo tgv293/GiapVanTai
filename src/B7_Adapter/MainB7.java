@@ -4,7 +4,10 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
-
+/**
+ * Lớp MainB7 thực hiện ví dụ về sử dụng adapter để chuyển đổi dữ liệu từ ArrayList sang DefaultTableModel
+ * và hiển thị trong JTable.
+ */
 public class MainB7 {
     public static void main(String[] args) {
         // Tạo ArrayList

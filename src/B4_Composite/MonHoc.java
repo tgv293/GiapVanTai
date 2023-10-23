@@ -1,11 +1,12 @@
 package B4_Composite;
 
-import BT5.HocSinh;
+/**
+ * Lớp MonHoc triển khai KeHoachHocTap để đại diện cho môn học cụ thể.
+ */
 
-public class MonHoc extends KeHoachHocTap{
-
+public class MonHoc extends KeHoachHocTap {
     int soTC;
-    int hocPhi; //Học phí cho một tín chỉ
+    int hocPhi; // Học phí cho một tín chỉ
 
     public MonHoc(String name, int soTC, int hocPhi) {
         super(name);

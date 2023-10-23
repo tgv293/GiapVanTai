@@ -1,5 +1,6 @@
 package BT3;
 
+// Lớp SinhVienIT kế thừa từ SinhVienPoly, đại diện cho sinh viên ngành IT
 class SinhVienIT extends SinhVienPoly {
     double diemJava;
     double diemCss;

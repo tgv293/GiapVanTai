@@ -1,5 +1,8 @@
 package BT3;
 
+/**
+ * Lớp MainBT3 chứa phương thức main để thử nghiệm sinh viên và tính toán điểm và học lực của họ.
+ */
 public class MainBT3 {
     public static void main(String[] args) {
         SinhVienIT svPoly = new SinhVienIT("Nguyen Van A", 8.5, 7.0, 9.0);

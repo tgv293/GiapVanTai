@@ -1,5 +1,8 @@
 package CB1_ChainOfResponsibility;
 
+/**
+ * Lớp ATM_TheoMenhGiaTien đại diện cho máy ATM hoạt động theo mệnh giá tiền và là một phần của mô hình Chain of Responsibility.
+ */
 public class ATM_TheoMenhGiaTien implements ATM {
 
     ATM menhGiaKeTiep;

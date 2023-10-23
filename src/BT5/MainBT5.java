@@ -1,5 +1,8 @@
 package BT5;
 
+/**
+ * Lớp MainBT5 chứa hàm main để kiểm tra các chức năng của ứng dụng quản lý học sinh và giáo viên trong một lớp học.
+ */
 public class MainBT5 {
     public static void main(String[] args) {
         LopHoc lopHoc = new LopHoc();
@@ -21,23 +24,28 @@ public class MainBT5 {
         qlds.them(hs2);
         qlds.them(gv1);
         qlds.them(gv2);
-//      In danh sách học sinh
+
+        // In danh sách học sinh
         System.out.println("Danh sách học sinh:");
         lopHoc.inDSHS();
-//      In danh sách các giáo viên
+
+        // In danh sách các giáo viên
         System.out.println("\nDanh sách giáo viên giảng dạy:");
         lopHoc.inDSGVGD();
-//      In danh sách các cá nhân
+
+        // In danh sách các cá nhân
         System.out.println("\nDanh sách tất cả các cá nhân:");
         qlds.inDS();
-//      Xóa học sinh
+
+        // Xóa học sinh
         qlds.xoa("Nguyen Van A");
         System.out.println("Danh sách học sinh sau khi xóa:");
         qlds.inDS();
-//      Chỉnh sửa dựa trên getter setter
+
+        // Chỉnh sửa dựa trên getter setter
         HocSinh hs = new HocSinh("Nguyen Van A", 20, "123 Le Loi", "0123456789", "10A1", "Hoc gioi");
         System.out.println(hs.HienThiTT());
         hs.setTuoi(21);
-        System.out.println("Tuoi moi cua hs: " + hs.getTuoi());
+        System.out.println("Tuổi mới của hs: " + hs.getTuoi());
     }
 }
