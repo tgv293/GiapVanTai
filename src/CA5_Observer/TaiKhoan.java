@@ -1,8 +1,5 @@
 package CA5_Observer;
 
-/**
- * Lớp TaiKhoan đại diện cho tài khoản ngân hàng và là một phần của mô hình Observer.
- */
 public class TaiKhoan {
     private int soDu;
     private ThongBao observer;

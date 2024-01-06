@@ -1,8 +1,5 @@
 package A2_BuilderPattern;
 
-/**
- * Lớp MyStringBuilder là một lớp tùy chỉnh dùng để xây dựng chuỗi dựa trên mô hình Builder.
- */
 public class MyStringBuilder {
     private StringBuilder str;
 

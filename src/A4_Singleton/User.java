@@ -1,8 +1,5 @@
 package A4_Singleton;
 
-/**
- * Lớp User đại diện cho một người dùng tham gia vào quá trình bầu cử và có khả năng bỏ phiếu cho ứng viên.
- */
 public class User {
     private String name;
 

@@ -1,8 +1,5 @@
 package CA2_Observer;
 
-/**
- * Lớp Button đại diện cho một nút trong ứng dụng và là một phần của mô hình Observer.
- */
 public class Button {
     OnClickListener activity;
 

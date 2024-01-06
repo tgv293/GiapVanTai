@@ -3,9 +3,6 @@ package A1_BuilderPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Lớp HoaDon đại diện cho một hóa đơn, bao gồm thông tin header và danh sách chi tiết hóa đơn.
- */
 public class HoaDon {
     private HoaDonHeader header; // Thông tin header của hóa đơn
     private List<CTHD> cthds; // Danh sách chi tiết hóa đơn

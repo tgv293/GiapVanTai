@@ -2,9 +2,6 @@ package BT2;
 
 import BT1.NhanVien;
 
-/**
- * Giao diện IQuanLy định nghĩa các phương thức quản lý nhân viên.
- */
 public interface IQuanLy {
     /**
      * Phương thức để thêm một nhân viên mới.

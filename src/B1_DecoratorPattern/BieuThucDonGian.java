@@ -1,8 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp BieuThucDonGian thể hiện một biểu thức đơn giản với một toán hạng.
- */
 class BieuThucDonGian extends BieuThuc {
     private float toanHang;
 

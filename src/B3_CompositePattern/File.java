@@ -1,8 +1,5 @@
 package B3_CompositePattern;
 
-/**
- * Lớp File thực hiện việc quản lý tệp tin trong mô hình Composite.
- */
 public class File extends AbstractFile {
     public File(String name, String ngayTao) {
         super(name, ngayTao);

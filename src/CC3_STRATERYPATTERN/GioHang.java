@@ -1,34 +1,46 @@
 package CC3_STRATERYPATTERN;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GioHang {
-    ArrayList<MatHang> dsMH = new ArrayList<>();
+    List<MatHang> dsMH = new ArrayList<>();
     IThanhToan hinhThucTT;
     IVanChuyen hinhThucVC;
+    IKhuyenMai hinhThucKM;
 
-    void them(MatHang mh) {
+    public void them(MatHang mh) {
         dsMH.add(mh);
     }
 
-    float tongTien() {
+    public void thanhToan() {
         float tong = 0;
         for (MatHang mh : dsMH) {
             tong += mh.soLuong * mh.donGia;
         }
-        return tong;
-    }
-
-    void thanhToan() {
-        float tienHang = tongTien();
-        float tienGiam = hinhThucTT.thanhToan(tienHang);
+        float tienKM = hinhThucKM.khuyenMai(tong);
+        float kmThanhToan = hinhThucTT.thanhToan(tong);
         float phiVC = hinhThucVC.phiVanChuyen();
         int thoiGianGiao = hinhThucVC.thoiGianGiao();
 
-        System.out.println("Tổng tiền hàng: " + tienHang);
-        System.out.println("Tiền được giảm khi thanh toán: " + (tienHang - tienGiam));
+        System.out.println("Tổng tiền hàng: " + tong);
+        System.out.println("Tiền được giảm khuyến mãi: " + tienKM);
+        System.out.println("Tiền được giảm thanh toán: " + (tong - tienKM - kmThanhToan));
         System.out.println("Phí vận chuyển: " + phiVC);
-        System.out.println("Tổng tiền cần thanh toán: " + (tienGiam + phiVC));
+        System.out.println("Tổng tiền phải trả: " + (kmThanhToan - tienKM + phiVC));
         System.out.println("Thời gian dự kiến nhận hàng: " + thoiGianGiao + " ngày");
     }
+
+    public void setHinhThucTT(IThanhToan hinhThucTT) {
+        this.hinhThucTT = hinhThucTT;
+    }
+
+    public void setHinhThucVC(IVanChuyen hinhThucVC) {
+        this.hinhThucVC = hinhThucVC;
+    }
+
+    public void setHinhThucKM(IKhuyenMai hinhThucKM) {
+        this.hinhThucKM = hinhThucKM;
+    }
+
 }

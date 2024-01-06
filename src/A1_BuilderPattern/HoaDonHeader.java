@@ -1,8 +1,5 @@
 package A1_BuilderPattern;
 
-/**
- * Lớp HoaDonHeader đại diện cho thông tin header của một hóa đơn.
- */
 class HoaDonHeader {
     private String soHD; // Số hóa đơn
     private String ngayBan; // Ngày bán hóa đơn

@@ -1,8 +1,5 @@
 package BT5;
 
-/**
- * Giao diện IQLDS định nghĩa các phương thức cần được cung cấp bởi một lớp quản lý danh sách cá nhân.
- */
 public interface IQLDS {
     /**
      * Phương thức để thêm một cá nhân vào danh sách.

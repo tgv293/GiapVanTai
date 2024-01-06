@@ -1,8 +1,5 @@
 package CA2_Observer;
 
-/**
- * Lớp Activity đại diện cho hoạt động trong ứng dụng và là một Listener cho sự kiện nhấn nút.
- */
 public class Activity implements Button.OnClickListener {
     Button myButton;
     int clickCount = 0;

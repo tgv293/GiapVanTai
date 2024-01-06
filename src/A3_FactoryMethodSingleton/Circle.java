@@ -1,15 +1,13 @@
 package A3_FactoryMethodSingleton;
 
-/**
- * Lớp Circle là một lớp đại diện cho hình tròn và là một ví dụ của mô hình Singleton.
- */
 public class Circle extends Shape {
-    private static Circle instance;
+    public static Circle instance;
 
     /**
      * Constructor ẩn định để đảm bảo rằng không thể tạo các thể hiện của lớp Circle từ bên ngoài.
      */
-    private Circle() {}
+    public Circle() {
+    }
 
     /**
      * Phương thức này trả về một thể hiện của lớp Circle (nếu đã được tạo), hoặc tạo một thể hiện mới nếu chưa tồn tại.

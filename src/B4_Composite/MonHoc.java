@@ -1,8 +1,5 @@
 package B4_Composite;
 
-/**
- * Lớp MonHoc triển khai KeHoachHocTap để đại diện cho môn học cụ thể.
- */
 
 public class MonHoc extends KeHoachHocTap {
     int soTC;

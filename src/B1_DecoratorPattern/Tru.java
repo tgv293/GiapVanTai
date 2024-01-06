@@ -1,8 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp Tru là một decorator để thực hiện phép trừ giữa hai biểu thức.
- */
 class Tru extends BieuThucDecorator {
     private BieuThuc bt;
 

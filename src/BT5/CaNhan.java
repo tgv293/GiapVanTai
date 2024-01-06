@@ -1,8 +1,5 @@
 package BT5;
 
-/**
- * Lớp trừu tượng đại diện cho một cá nhân với thông tin cơ bản.
- */
 public abstract class CaNhan {
     private String hoTen;
     private int tuoi;

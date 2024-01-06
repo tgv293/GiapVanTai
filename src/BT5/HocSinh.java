@@ -1,8 +1,5 @@
 package BT5;
 
-/**
- * Lớp đại diện cho một học sinh với thông tin bổ sung về lớp và năng khiếu.
- */
 public class HocSinh extends CaNhan {
     private String lop; // Lớp học mà học sinh đang theo học
     private String nangKhieu; // Năng khiếu hoặc sở thích của học sinh

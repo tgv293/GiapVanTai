@@ -1,8 +1,5 @@
 package B3_CompositePattern;
 
-/**
- * Lớp MainB3C thực hiện ví dụ về mô hình Composite trong việc quản lý thư mục và tệp tin.
- */
 public class MainB3C {
     public static void main(String[] args) {
         Folder root = new Folder("Data (D:)", "10-10-2023");

@@ -5,9 +5,6 @@ import BT1.NhanVien;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Lớp QuanLyNhanVien triển khai giao diện IQuanLy để quản lý danh sách nhân viên.
- */
 public class QuanLyNhanVien implements IQuanLy {
 
     List<NhanVien> dsNV = new ArrayList<>();

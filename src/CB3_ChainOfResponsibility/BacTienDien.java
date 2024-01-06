@@ -1,15 +1,13 @@
 package CB3_ChainOfResponsibility;
 
-/**
- * Lớp BacTienDien đại diện cho một bậc tính tiền điện với giới hạn và giá tiền cụ thể, và là một phần của mô hình Chain of Responsibility.
- */
 public class BacTienDien implements ITinhTienDien {
-    double gioiHan;
-    double giaTien;
+    double min,max,giaTien;
+
     ITinhTienDien bacTienDienTiepTheo;
 
-    public BacTienDien(double gioiHan, double giaTien) {
-        this.gioiHan = gioiHan;
+    public BacTienDien(double min, double max, double giaTien) {
+        this.min = min;
+        this.max = max;
         this.giaTien = giaTien;
     }
 
@@ -21,13 +19,10 @@ public class BacTienDien implements ITinhTienDien {
 
     @Override
     public double tinhTien(double soDienTieuThu) {
-        if (soDienTieuThu <= gioiHan) {
-            return bacTienDienTiepTheo.tinhTien(soDienTieuThu);
+        if (soDienTieuThu <= max) {
+            return (soDienTieuThu - min) * giaTien;
         }
 
-        double soDienTieuThuTrongBac = soDienTieuThu - gioiHan;
-        double soDienTieuThuChuaTinh = gioiHan;
-
-        return giaTien * soDienTieuThuTrongBac + bacTienDienTiepTheo.tinhTien(soDienTieuThuChuaTinh);
+        return (max-min)*giaTien+bacTienDienTiepTheo.tinhTien(soDienTieuThu);
     }
 }

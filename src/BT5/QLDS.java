@@ -2,10 +2,6 @@ package BT5;
 
 import java.util.ArrayList;
 
-/**
- * Lớp QLDS (Quản lý danh sách) là một thành phần quản lý danh sách các cá nhân.
- * Nó triển khai giao diện IQLDS để thêm, xóa, và hiển thị thông tin của các cá nhân trong danh sách.
- */
 public class QLDS implements IQLDS {
     ArrayList<CaNhan> dsCaNhan = new ArrayList<>();
 

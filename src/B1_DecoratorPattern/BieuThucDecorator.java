@@ -1,9 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp BieuThucDecorator là một lớp trừu tượng dùng làm cơ sở cho tất cả các decorator khác.
- * Một decorator sẽ kế thừa từ lớp này và mở rộng hoặc thay đổi hành vi của biểu thức gốc (bieuThuc).
- */
 abstract class BieuThucDecorator extends BieuThuc {
     protected BieuThuc bieuThuc;
 

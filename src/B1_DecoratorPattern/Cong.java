@@ -1,8 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp Cong là một decorator để thực hiện phép cộng giữa hai biểu thức.
- */
 class Cong extends BieuThucDecorator {
     private BieuThuc bt;
 

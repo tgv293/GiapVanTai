@@ -1,8 +1,5 @@
 package A1_BuilderPattern;
 
-/**
- * Lớp CTHD (Chi tiết hóa đơn) đại diện cho thông tin chi tiết về một sản phẩm trong hóa đơn.
- */
 class CTHD {
     private String sanPham; // Tên sản phẩm
     private int soLuong; // Số lượng sản phẩm

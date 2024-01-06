@@ -1,9 +1,5 @@
 package BT1;
 
-/**
- * Lớp MainBT1 thực hiện ví dụ về việc tạo và sử dụng đối tượng NhanVien
- * để hiển thị thông tin về một nhân viên và tính toán tiền thưởng.
- */
 public class MainBT1 {
     public static void main(String[] args) {
         // Tạo hai đối tượng nhân viên

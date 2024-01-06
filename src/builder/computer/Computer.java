@@ -1,8 +1,5 @@
 package builder.computer;
 
-/**
- * Lớp Computer đại diện cho một máy tính với các thuộc tính như CPU, RAM, bộ nhớ và màn hình.
- */
 public class Computer {
     String CPU, RAM, storage, screen;
 

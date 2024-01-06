@@ -1,8 +1,5 @@
 package BT4;
 
-/**
- * Lớp MainBT4 là lớp chứa hàm main để thực hiện thử nghiệm chương trình quản lý chuyến xe.
- */
 public class MainBT4 {
     public static void main(String[] args) {
         QuanLyChuyenXe chuyenXe = new QuanLyChuyenXe();

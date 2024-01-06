@@ -1,31 +1,24 @@
 package CA4_Observer;
 
-/**
- * Lớp ThanhVienA đại diện cho một thành viên nhận thông báo từ một chủ đề hoặc nhóm (lớp Topic),
- * và là một phần của mô hình Observer.
- */
-public class ThanhVienA implements Topic.ThanhVien {
+public class ThanhVienA implements Topic.TopicObserver {
+    Topic subject;
 
-    Topic topic;
-
-    /**
-     * Phương thức khởi tạo ThanhVienA và đăng ký nó cho một chủ đề cụ thể.
-     * @param topic Chủ đề cụ thể.
-     */
     public ThanhVienA(Topic topic) {
-        this.topic = topic;
-        topic.dangKyThanhVien(this);
-    }
-
-    /**
-     * Phương thức này dùng để hủy đăng ký thành viên khỏi chủ đề.
-     */
-    public void huyDangKyThanhVien(){
-        topic.huyDangKyThanhVien(this);
+        this.subject = topic;
+        topic.dangKy(this);
     }
 
     @Override
-    public void capNhat(String tin) {
-        System.out.println("Thành viên A nhận được: " + tin);
+    public void tinMoi(TinTuc t) {
+        System.out.println("Tv A có tin mới:");
+        System.out.println("Id " + ": " + t.id);
+        System.out.println("Nội dung " + ": " + t.id);
+    }
+
+    @Override
+    public void capNhat(TinTuc t) {
+        System.out.println("Tv A cập nhật tin cũ:");
+        System.out.println("Id " + ": " + t.id);
+        System.out.println("Nội dung " + ": " + t.id);
     }
 }

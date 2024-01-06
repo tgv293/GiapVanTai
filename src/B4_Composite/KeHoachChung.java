@@ -1,8 +1,5 @@
 package B4_Composite;
 
-/**
- * Lớp KeHoachChung là một phần của mô hình Composite, đại diện cho một kế hoạch học tập tổng hợp chứa các kế hoạch con.
- */
 
 import java.util.ArrayList;
 import java.util.List;

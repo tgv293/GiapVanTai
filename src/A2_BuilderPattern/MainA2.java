@@ -1,8 +1,5 @@
 package A2_BuilderPattern;
 
-/**
- * Lớp MainA2 là lớp chứa phương thức main, chịu trách nhiệm thực thi ứng dụng và tạo chuỗi tùy chỉnh sử dụng lớp MyStringBuilder.
- */
 public class MainA2 {
     public static void main(String[] args) {
         // Tạo một đối tượng MyStringBuilder để xây dựng chuỗi tùy chỉnh.

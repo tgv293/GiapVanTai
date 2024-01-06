@@ -1,8 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp Nhan là một decorator để thực hiện phép nhân giữa hai biểu thức.
- */
 class Nhan extends BieuThucDecorator {
     private BieuThuc bt;
 

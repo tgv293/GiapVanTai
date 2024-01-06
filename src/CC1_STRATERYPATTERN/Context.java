@@ -7,7 +7,7 @@ public class Context {
         this.tinhToan = tinhToan;
     }
 
-    public float executeTinh(float a, float b) {
+    public float tinh(float a, float b) {
         return tinhToan.tinh(a, b);
     }
 }

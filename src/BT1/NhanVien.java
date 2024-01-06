@@ -1,9 +1,5 @@
 package BT1;
 
-/**
- * Lớp NhanVien đại diện cho thông tin của một nhân viên bao gồm tên,
- * địa chỉ, tổng số giờ làm việc, tuổi và tiền lương.
- */
 public class NhanVien {
     String ten, diaChi;
     int tongSoGioLam, tuoi;

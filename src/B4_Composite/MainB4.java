@@ -1,8 +1,5 @@
 package B4_Composite;
 
-/**
- * Lớp MainB4 thực hiện ví dụ về mô hình Composite để quản lý kế hoạch học tập tổng hợp.
- */
 public class MainB4 {
     public static void main(String[] args) {
         KeHoachChung khoaHoc = new KeHoachChung("2020-2024");

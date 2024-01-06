@@ -1,8 +1,5 @@
 package CB1_ChainOfResponsibility;
 
-/**
- * Giao diện ATM đại diện cho các máy ATM và quy định các phương thức cần phải được triển khai.
- */
 public interface ATM {
 
     /**
@@ -19,5 +16,5 @@ public interface ATM {
      * @param soTien     Số tiền cần rút.
      * @param menhGiaMax Mệnh giá tiền tối đa được chấp nhận bởi máy ATM.
      */
-    void rutTien(int soTien, int menhGiaMax);
+    void rutTien(int soTien);
 }

@@ -1,8 +1,5 @@
 package BT5;
 
-/**
- * Lớp LopHoc đại diện cho một lớp học và quản lý danh sách học sinh và giáo viên giảng dạy trong lớp.
- */
 public class LopHoc {
     QLDS qldsHS = new QLDS(); // Danh sách quản lý học sinh
     QLDS qldsGVGD = new QLDS(); // Danh sách quản lý giáo viên giảng dạy

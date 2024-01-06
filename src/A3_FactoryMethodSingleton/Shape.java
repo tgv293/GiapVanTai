@@ -1,8 +1,5 @@
 package A3_FactoryMethodSingleton;
 
-/**
- * Lớp Shape là một lớp trừu tượng đại diện cho các hình vẽ và định nghĩa các thuộc tính cơ bản của hình.
- */
 public abstract class Shape {
     protected String brush; // Thuộc tính đại diện cho loại bút vẽ
     protected String paper; // Thuộc tính đại diện cho loại giấy vẽ

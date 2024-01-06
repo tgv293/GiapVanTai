@@ -8,11 +8,16 @@ public class MainATM {
         ATM m10 = new ATM_TheoMenhGiaTien(10);
         ATM m1 = new ATM_TheoMenhGiaTien(1);
 
-        m500.menhGiaKeTiep(m100)
+        m500
+                .menhGiaKeTiep(m100)
                 .menhGiaKeTiep(m50)
                 .menhGiaKeTiep(m10)
                 .menhGiaKeTiep(m1);
 
-        m500.rutTien(293,50);
+        System.out.println("Câu a:");
+        m500.rutTien(293);
+        System.out.println("Câu b:");
+        ATM_Factory atmFactory = new ATM_Factory();
+        atmFactory.getATM(50).rutTien(293);
     }
 }

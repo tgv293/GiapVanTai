@@ -9,6 +9,7 @@ public class MainCC3 {
         gioHang.them(new MatHang("Mat hang 2", 3, 2000000));
 
         // Chọn hình thức thanh toán và đơn vị vận chuyển
+        gioHang.hinhThucKM = new KhuyenMai10Max100();
         gioHang.hinhThucTT = new COD();
         gioHang.hinhThucVC = new GiaoHangNhanh();
 

@@ -1,15 +1,12 @@
 package A3_FactoryMethodSingleton;
 
-/**
- * Lớp Rectangle là một lớp đại diện cho hình chữ nhật và là một ví dụ của mô hình Singleton.
- */
 public class Rectangle extends Shape {
-    private static Rectangle instance;
+    public static Rectangle instance;
 
     /**
      * Constructor ẩn định để đảm bảo rằng không thể tạo các thể hiện của lớp Rectangle từ bên ngoài.
      */
-    private Rectangle() {}
+    public Rectangle() {}
 
     /**
      * Phương thức này trả về một thể hiện của lớp Rectangle (nếu đã được tạo), hoặc tạo một thể hiện mới nếu chưa tồn tại.

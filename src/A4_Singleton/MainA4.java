@@ -1,8 +1,5 @@
 package A4_Singleton;
 
-/**
- * Lớp MainA4 là lớp chứa phương thức main, chịu trách nhiệm thực thi ứng dụng và mô phỏng quá trình bầu cử.
- */
 public class MainA4 {
     public static void main(String[] args) {
         // Tạo các đối tượng người dùng để tham gia bầu cử.

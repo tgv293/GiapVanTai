@@ -1,8 +1,5 @@
 package CA5_Observer;
 
-/**
- * Lớp ATM đại diện cho máy rút tiền và là một người theo dõi (Observer) của tài khoản ngân hàng, implement giao diện ThongBao.
- */
 public class ATM implements TaiKhoan.ThongBao {
     TaiKhoan taiKhoan;
 

@@ -2,9 +2,6 @@ package A4_Singleton;
 
 import java.util.*;
 
-/**
- * Lớp Election là một ví dụ về mô hình Singleton và đại diện cho quá trình bầu cử của hai ứng viên Trump và Biden.
- */
 public class Election {
     private static Election instance;
     private int Trump;      // Số phiếu ủng hộ cho ứng viên Trump

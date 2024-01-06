@@ -1,8 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp MainB1 chứa hàm main để kiểm tra việc sử dụng các decorator trong biểu thức.
- */
 public class MainB1 {
     public static void main(String[] args) {
         // Tạo và tính giá trị biểu thức 1

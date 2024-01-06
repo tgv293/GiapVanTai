@@ -1,8 +1,5 @@
 package BT5;
 
-/**
- * Lớp đại diện cho một giáo viên với thông tin bổ sung về môn dạy và tổ bộ môn.
- */
 public class GiaoVien extends CaNhan {
     private String monDay; // Môn học mà giáo viên dạy
     private String toBoMon; // Tổ bộ môn mà giáo viên thuộc

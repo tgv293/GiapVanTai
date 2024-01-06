@@ -1,8 +1,5 @@
 package CB4_ChainOfResponsibility;
 
-/**
- * Lớp GiaiKhuyenKhich đại diện cho một giải khuyến khích với quy tắc xác định trúng giải dựa trên một bộ số trúng thưởng và là một phần của mô hình Chain of Responsibility.
- */
 public class GiaiKhuyenKhich implements DoVeSo {
     private DoVeSo giaiKeTiep;
     private String tenGiai;

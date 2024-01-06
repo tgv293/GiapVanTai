@@ -2,9 +2,6 @@ package A5_BuilderPattern;
 
 import java.util.*;
 
-/**
- * Lớp Book đại diện cho một cuốn sách và là một ví dụ của mô hình Builder.
- */
 public class Book {
     private String title;       // Tiêu đề của cuốn sách
     private int pages;          // Số trang của cuốn sách

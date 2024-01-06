@@ -1,8 +1,5 @@
 package A1_BuilderPattern;
 
-/**
- * Lớp MainA1 là lớp chứa phương thức main, chịu trách nhiệm thực thi ứng dụng và tạo hóa đơn sử dụng mô hình Builder.
- */
 public class MainA1 {
     public static void main(String[] args) {
         // Tạo một đối tượng HoaDon bằng cách sử dụng lớp Builder để thiết lập thông tin hóa đơn.

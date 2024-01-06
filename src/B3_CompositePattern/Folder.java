@@ -2,9 +2,6 @@ package B3_CompositePattern;
 
 import java.util.*;
 
-/**
- * Lớp Folder thực hiện việc quản lý thư mục trong mô hình Composite.
- */
 public class Folder extends AbstractFile {
 
     private List<AbstractFile> list = new ArrayList<>();

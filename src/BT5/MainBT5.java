@@ -1,8 +1,5 @@
 package BT5;
 
-/**
- * Lớp MainBT5 chứa hàm main để kiểm tra các chức năng của ứng dụng quản lý học sinh và giáo viên trong một lớp học.
- */
 public class MainBT5 {
     public static void main(String[] args) {
         LopHoc lopHoc = new LopHoc();

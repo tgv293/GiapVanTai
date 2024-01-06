@@ -1,15 +1,12 @@
 package A3_FactoryMethodSingleton;
 
-/**
- * Lớp Triangle là một lớp đại diện cho hình tam giác và là một ví dụ của mô hình Singleton.
- */
 public class Triangle extends Shape {
-    private static Triangle instance;
+    public static Triangle instance;
 
     /**
      * Constructor ẩn định để đảm bảo rằng không thể tạo các thể hiện của lớp Triangle từ bên ngoài.
      */
-    private Triangle() {}
+    public Triangle() {}
 
     /**
      * Phương thức này trả về một thể hiện của lớp Triangle (nếu đã được tạo), hoặc tạo một thể hiện mới nếu chưa tồn tại.

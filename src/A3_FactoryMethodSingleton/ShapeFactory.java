@@ -1,12 +1,6 @@
 package A3_FactoryMethodSingleton;
 
-/**
- * Lớp ShapeFactory là một factory class (lớp tạo) để tạo các hình vẽ khác nhau sử dụng mô hình Factory Method.
- */
 public class ShapeFactory {
-    // Liệt kê các loại hình mà factory này có thể tạo.
-    public enum ShapeType { RECTANGLE, TRIANGLE, CIRCLE }
-
     /**
      * Phương thức tạo hình với loại cụ thể được chỉ định.
      *
@@ -15,11 +9,17 @@ public class ShapeFactory {
      * @throws IllegalArgumentException nếu loại hình không hợp lệ
      */
     public static Shape createShape(ShapeType shapeType) {
-        return switch (shapeType) {
-            case RECTANGLE -> Rectangle.getInstance();
-            case TRIANGLE -> Triangle.getInstance();
-            case CIRCLE -> Circle.getInstance();
-            default -> throw new IllegalArgumentException("Invalid shape type");
-        };
+        switch (shapeType) {
+            case CIRCLE -> {
+                return new Circle();
+            }
+            case TRIANGLE -> {
+                return new Triangle();
+            }
+            case RECTANGLE -> {
+                return new Rectangle();
+            }
+        }
+        return null;
     }
 }

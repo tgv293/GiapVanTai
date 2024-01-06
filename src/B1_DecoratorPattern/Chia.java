@@ -1,8 +1,5 @@
 package B1_DecoratorPattern;
 
-/**
- * Lớp Chia là một decorator để thực hiện phép chia giữa hai biểu thức.
- */
 class Chia extends BieuThucDecorator {
     private BieuThuc bt;
 

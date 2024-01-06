@@ -1,12 +1,14 @@
 package B3_DecoratorPattern;
 
-/**
- * Lớp MainB3D thực hiện ví dụ về mô hình Decorator để trang trí TextWidget với CenterDecorator.
- */
 public class MainB3D {
     public static void main(String[] args) {
-        Widget widget = new TextWidget();
-        widget = new CenterDecorator(widget);
-        widget.show();
+        Widget text = new Text("Trời sẽ mưa");
+        Widget center = new Center(text);
+        center.show();
+
+        Widget icon = new Icon("triangle");
+        Widget center2 = new Center(icon);
+        Widget button = new Button(center2);
+        button.show();
     }
 }
